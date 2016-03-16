@@ -8,7 +8,7 @@ int ObterDeLetrasDigitas(char Texto[NumeroMaximoLetras]);
 char *Push(char *Pilha, char Texto[255], int QuantidadeDeNodos);
 char *Pop(char *Pilha, int QuantidadeDeNodos);
 void ImprimirPilha(char *Ponteiro, int QuantidadeDeNodos);
-void LiberaMemoria(void *Ponteiro);
+void LiberarMemoria(void *Ponteiro);
 char *AlocarMemoria(char *Ponteiro, int QuantidadeDeNodos);
 
 int main(){
@@ -59,8 +59,8 @@ int main(){
     }
   }
 
-  LiberaMemoria(TextoOriginal);
-  LiberaMemoria(TextoDesempilhado);
+  LiberarMemoria(TextoOriginal);
+  LiberarMemoria(TextoDesempilhado);
 
   return 0;
 }
@@ -113,7 +113,7 @@ char *Pop(char *Pilha, int QuantidadeDeNodos)
   }
 }
 
-void LiberaMemoria(void *Ponteiro)
+void LiberarMemoria(void *Ponteiro)
 {
   free(Ponteiro);
 }
@@ -128,12 +128,12 @@ void ImprimirPilha(char *Ponteiro, int QuantidadeDeNodos)
   printf("\n\n");
 }
 
-char *AlocarMemoria(char *ponteiro, int QuantidadeDeNodos)
+char *AlocarMemoria(char *Ponteiro, int QuantidadeDeNodos)
 {
-  ponteiro = malloc(QuantidadeDeNodos * sizeof(char *));
+  Ponteiro = malloc(QuantidadeDeNodos * sizeof(char *));
 
-  if(ponteiro == NULL)
+  if(Ponteiro == NULL)
     printf("\nNão foi possivel alocar a memoria necessaria....");
 
-  return ponteiro;
+  return Ponteiro;
 }

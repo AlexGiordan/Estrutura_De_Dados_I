@@ -25,7 +25,7 @@ int main(){
   printf("Informe um texto com no maximo 255 caracteres,\n");
   printf("este texto sera lido e armezado em uma pilha.\n");
   printf("O resultado final sera uma pilha impressa na tela\n");
-  printf("com seu texto, note que seu texto estar impresso invertido\n");
+  printf("com seu texto, note que seu texto estara impresso invertido\n");
   printf("devido a logica de pilhas(LIFO).\n");
   fgets(Texto, NumeroMaximoLetras, stdin);
 
@@ -50,7 +50,7 @@ int main(){
       if(TextoDesempilhado == NULL)
 	exit(1);
       else{
-	printf("Desempilhado texto na pilha....\n");
+	printf("Desempilhado texto da pilha....\n");
 	TextoDesempilhado = Pop(TextoOriginal, NumeroTotalDeNodos);
 
 	printf("Texto desempilhado....\n");

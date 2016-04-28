@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
-
+//tete
 int main(void){
 	//Variaveis
 	int **Matriz;

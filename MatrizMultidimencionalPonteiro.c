@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
-//tetekllllllllllllllll
+//alex giordan....
 int main(void){
 	//Variaveis
 	int **Matriz;
